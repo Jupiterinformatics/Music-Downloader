@@ -1,7 +1,7 @@
 from pytube import YouTube 
 
 def indir():
-    y = YouTube(input("müzik bağlantısını yapıştırın : "))
+    y = YouTube(input("bağlantı : "))
     ses = y.streams.filter(only_audio=True).first()
     ses.download()
 
