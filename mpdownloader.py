@@ -1,10 +1,10 @@
 from pytube import YouTube 
 
-def müzikindir():
+def indir():
     y = YouTube(input("müzik bağlantısını yapıştırın : "))
-    müzik = y.streams.filter(only_audio=True).first()
-    müzik.download()
+    ses = y.streams.filter(only_audio=True).first()
+    ses.download()
 
-müzikindir()
+indir()
 print("_______________________________")
 print("indirme işlemi tamamlandı..")
